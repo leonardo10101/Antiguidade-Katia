@@ -1,0 +1,91 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo - Antiguidades Clássicas</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20%;
+            padding: 20px;
+            justify-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .item-container {
+            display: flex;
+            align-items: center;
+            gap: 15%; 
+            width: 100%;
+            max-width: 500px;
+        }
+        .item {
+            width: 250px;
+            height: 250px;
+            border: 2px solid #8c7b42;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .descricao {
+            flex: 1;
+            font-size: 16px;
+            color: #333;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Antiguidades Clássicas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="acervo.html">Acervo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="acervo">
+        <h2><strong>Nosso</strong> <span style="color: #8c7b42;">Acervo.</span></h2>
+        <p>Confira algumas das peças incríveis que temos disponíveis para colecionadores e apreciadores de antiguidades.</p>
+        
+        <div class="galeria">
+            <div class="item-container">
+                <a href="acervo1.jpg" target="_blank" class="item"><img src="acervo1.jpg" alt="Peça antiga 1"></a>
+                <p class="descricao">O pagamento deverá ser feito em até 48h após o término do leilão. Informações sobre custos de envio, somente serão fornecidas se solicitadas.</p>
+            </div>
+            <div class="item-container">
+                <a href="acervo2.jpg" target="_blank" class="item"><img src="acervo2.jpg" alt="Peça antiga 2"></a>
+                <p class="descricao">Descrição da peça 2.</p>
+            </div>
+            <div class="item-container">
+                <a href="acervo3.jpg" target="_blank" class="item"><img src="acervo3.jpg" alt="Peça antiga 3"></a>
+                <p class="descricao">Descrição da peça 3.</p>
+            </div>
+            <div class="item-container">
+                <a href="acervo4.jpg" target="_blank" class="item"><img src="acervo4.jpg" alt="Peça antiga 4"></a>
+                <p class="descricao">Descrição da peça 4.</p>
+            </div>
+            <div class="item-container">
+                <a href="acervo5.jpg" target="_blank" class="item"><img src="acervo5.jpg" alt="Peça antiga 5"></a>
+                <p class="descricao">Descrição da peça 5.</p>
+            </div>
+            <div class="item-container">
+                <a href="acervo6.jpg" target="_blank" class="item"><img src="acervo6.jpg" alt="Peça antiga 6"></a>
+                <p class="descricao">Descrição da peça 6.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

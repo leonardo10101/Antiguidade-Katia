@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antiguidades Clássicas</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>Antiguidades Clássicas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="acervo.html">Acervo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="imagem-estatica">
+        <img src="/images/antiquario0.jpg" alt="Imagem de destaque" class="imagem-estatica">
+    </section>
+    
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos apaixonados por antiguidades e oferecemos peças únicas e históricas para colecionadores e apreciadores.</p>
+    </section>
+    
+    <section id="inicio">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/images/antiquario1.jpg" alt="Antiguidades" class="carousel-img"></div>
+                <div class="swiper-slide"><img src="/images/antiquario2.jpg" alt="Relíquias" class="carousel-img"></div>
+                <div class="swiper-slide"><img src="/images/antiquario3.jpg" alt="Objetos antigos" class="carousel-img"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+    <section >
+        <h2>Se deslumbre com nossos produtos</h2>
+        <p>Aperte em algum item para ir diretamente ao nosso acervo e dar uma olhada em nossas peças</p>
+        <div class="gallery">
+           <a href="acervo.html""> " <img src="/images/antiquario1.jpg" alt="Peça 1">
+            <img src="/images/antiquario2.jpg" alt="Peça 2">
+            <img src="/images/antiquario3.jpg" alt="Peça 3"></a>
+        </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            autoplay: { delay: 5000, disableOnInteraction: false },
+        });
+    </script>
+</body>
+</html>
